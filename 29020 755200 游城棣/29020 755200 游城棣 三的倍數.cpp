@@ -1,15 +1,13 @@
 #include <iostream>
 using namespace std;
-int main() {
-  int num ;
-  cout << "num: ";
-  cin >> num;
-
-  if (num%3==0){
-    cout << "NUM 是三的倍數";
-    cout << "num== " << num;
-  }
-  else{
-    cout << "NUM 不是三的倍數";
-}
+int main(){
+    int inputnum;
+    while(cin >> inputnum){
+      if(inputnum % 3 == 0){
+        cout << "是三的倍數";
+      }else{
+        cout << "非三的倍數";
+      }
+      
+    }
 }
